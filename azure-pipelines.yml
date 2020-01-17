@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'Windows'
 
 steps:
 - script: echo Hello, world!
@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: Ant@1
   inputs:
-    buildFile: 'chef-repo\Deploy_Doc\build.xml'
+    buildFile: 'chef-repo\build.xml'
     options: 
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
