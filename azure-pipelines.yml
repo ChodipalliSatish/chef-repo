@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'windows-local'
+pool: 'Windows'
+
 
 steps:
 - script: echo Hello, world!
